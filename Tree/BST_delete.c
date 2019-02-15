@@ -21,7 +21,7 @@ struct Node* Delete(struct Node *root, int data) {
 	if(root == NULL) return root;
 	else if(data < root->data) root->left = Delete(root->left,data);
 	else if (data > root->data) root->right = Delete(root->right,data);
-	// Wohoo... I found you, Get ready to be deleted
+	 
 	else {
 		// Case 1:  No child
 		if(root->left == NULL && root->right == NULL) {
